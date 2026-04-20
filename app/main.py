@@ -1,14 +1,11 @@
-
+import streamlit as st
 from graph.retail_graph import build_graph
 
-app = FastAPI()
-graph = build_graph()
+st.title("🛒 Retail GenAI Assistant")
 
-@app.get("/")
-def home():
-    return {"message": "Retail GenAI API running"}
+query = st.text_input("Ask your retail question:")
 
-@app.get("/ask")
-def ask(query: str):
+if st.button("Submit"):
+    graph = build_graph()
     result = graph.invoke({"query": query})
-    return result
+    st.write(result["result"])
