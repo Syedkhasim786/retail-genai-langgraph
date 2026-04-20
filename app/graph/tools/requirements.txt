@@ -1,8 +1,9 @@
-langchain
-langgraph
-fastapi
-uvicorn
-faiss-cpu
-openai
-python-dotenv
 streamlit
+uvicorn
+langgraph
+langchain
+langchain-anthropic
+anthropic
+fastapi
+faiss-cpu
+python-dotenv
