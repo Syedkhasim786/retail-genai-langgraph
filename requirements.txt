@@ -4,3 +4,6 @@ langgraph
 langchain
 langchain-anthropic
 anthropic
+fastapi
+faiss-cpu
+python-dotenv
