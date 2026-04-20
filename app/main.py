@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+
 from graph.retail_graph import build_graph
 
 app = FastAPI()
